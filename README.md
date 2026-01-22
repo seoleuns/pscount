@@ -164,7 +164,7 @@ project/
 ### Labeling Guidelines
 
 1. Open original image in ImageJ/FIJI or similar software
-2. Mark each particle center with a red point (RGB: 255, 0, 0)
+2. Mark each particle center with a red point 
 3. Save as TIF with naming convention: `{original_name}_{count}count_Flatten.tif`
 
 ### Labeling Tips
@@ -213,7 +213,7 @@ python opencv_counting.py --input ./test_original_csv --csv ./test_ground_truth.
 
 | Dataset     | Training Images | Test Images | MAE |
 |-------------|-----------------|-------------|-----|
-| Polystyrene | 19              | 24          | 2.1 |
+| Polystyrene | 19              | 24          | 2.2 |
 
 Baseline Cellpose (without fine-tuning): MAE = 65.5
 
