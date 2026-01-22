@@ -56,36 +56,6 @@ python pipeline.py \
     --output ./output
 ```
 
-## Usage Modes (with shell scripts or command lines)
-
-### Mode 1: Full Training Pipeline
-```bash
-bash scripts/train.sh
-# or
-python pipeline.py --labeled ./train_labeled --original ./train_original --epochs 100
-```
-
-### Mode 2: Evaluation I (Cellpose default vs. PSCount When Ground Truth Dataset is available: red pointed images or a csv file)
-```bash
-bash scripts/evaluate.sh
-
-# Cellpose default
-python pipeline.py --model default --test-labeled ./test_labeled --test-original ./test_original --output ./results_default
-
-# Fine-tuned (PSCount)
-python pipeline.py --model ./output/models/polystyrene_model --test-labeled ./test_labeled --test-original ./test_original --output./results_test
-
-# or
-
-python pipeline.py --model ./output/models/polystyrene_model --input ./test_csv_original --csv ./test_ground_truth.csv --output ./results_test_csv
-```
-
-### Mode 4: Prediction Only
-```bash
-bash scripts/predict.sh
-# or
-python pipeline.py --model ./output/models/polystyrene_model --input ./new_images --output ./results
-```
 
 ### Step-by-Step Usage from Data Pretreatment and
 
@@ -143,6 +113,9 @@ python predict.py \
     --input ./new_images \
     --output ./results_unknown
 ```
+
+## Shell Scripts
+Shell scripts (`train.sh`, `evaluate.sh`, `allprocess.sh`) are provided for convenience.
 
 ## Data Preparation
 
