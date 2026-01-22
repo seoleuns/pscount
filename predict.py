@@ -194,7 +194,7 @@ def evaluate_with_ground_truth(model_path, image_dir, labeled_dir, output_dir, s
     results_df = pd.DataFrame(results)
     mae = results_df['error'].abs().mean()
     mae = round(mae, 1) 
-    print(f"MAE: {mae}")
+    print(f"MAE: {mae:.1f}")
     
     results_df.to_csv(Path(output_dir) / "evaluation_results.csv", index=False)
     
@@ -285,8 +285,9 @@ def evaluate_with_csv(model_path, image_dir, csv_path, output_dir, save_images=T
 
     results_df = pd.DataFrame(results)
     mae = results_df['error'].abs().mean()
-    print(f"\nMAE: {mae:.1f}")
-    
+    mae = round(mae, 1) 
+    print(f"MAE: {mae:.1f}")
+
     results_df.to_csv(Path(output_dir) / "evaluation_results.csv", index=False)
     
     return results_df
