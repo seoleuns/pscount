@@ -34,7 +34,7 @@ conda install pytorch pytorch-cuda=12.1 -c pytorch -c nvidia
 
 # Install dependencies
 pip install cellpose
-pip install tifffile pandas opencv-python
+pip install tifffile pandas opencv-python matplotlib
 ```
 ## CellPose-SAM 4.0
 #pretrained model:
@@ -62,7 +62,7 @@ python pipeline.py \
 ```bash
 bash scripts/train.sh
 # or
-python pipeline.py --labeled ./labeled --original ./original --epochs 100
+python pipeline.py --labeled ./train_labeled --original ./train_original --epochs 100
 ```
 
 ### Mode 2: Evaluation I (Cellpose default vs. PSCount When Ground Truth Dataset is available: red pointed images or a csv file)
@@ -73,18 +73,18 @@ bash scripts/evaluate.sh
 python pipeline.py --model default --test-labeled ./test_labeled --test-original ./test_original --output ./results_default
 
 # Fine-tuned (PSCount)
-python pipeline.py --model ./models/polystyrene_model --test-labeled ./test_labeled --test-original ./test_original --output./results_test
+python pipeline.py --model ./output/models/polystyrene_model --test-labeled ./test_labeled --test-original ./test_original --output./results_test
 
 # or
 
-python pipeline.py --model ./models/polystyrene_model --input ./test_csv_original --csv ./test_ground_truth.csv --output ./results_test
+python pipeline.py --model ./output/models/polystyrene_model --input ./test_csv_original --csv ./test_ground_truth.csv --output ./results_test_csv
 ```
 
 ### Mode 4: Prediction Only
 ```bash
 bash scripts/predict.sh
 # or
-python pipeline.py --model ./models/polystyrene_model --input ./new_images --output ./results
+python pipeline.py --model ./output/models/polystyrene_model --input ./new_images --output ./results
 ```
 
 ### Step-by-Step Usage from Data Pretreatment and
