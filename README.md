@@ -26,8 +26,8 @@ This tool enables accurate particle counting with minimal manual annotation. Ins
 
 ```bash
 # Create conda environment
-conda create -n particle_counter python=3.10
-conda activate particle_counter
+conda create -n pscount python=3.10
+conda activate pscount
 
 # Install PyTorch with CUDA support
 conda install pytorch pytorch-cuda=12.1 -c pytorch -c nvidia
