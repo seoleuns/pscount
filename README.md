@@ -181,10 +181,10 @@ output/
 ### OpenCV test (optional for comparions)
 ```bash
 bash scripts/opencv_evaluate.sh
-# OpenCV (with labeled ground turth image)
+# OpenCV (with labeled ground truth image)
 python opencv_counting.py --input ./test_original --labeled ./test_labeled --output ./results_opencv
 
-# OpenCV (with csv for ground turth)
+# OpenCV (with csv for ground truth)
 python opencv_counting.py --input ./test_original_csv --csv ./test_ground_truth.csv --output ./results_opencv_csv
 ```
 ## Performance
