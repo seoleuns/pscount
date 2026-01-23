@@ -40,6 +40,39 @@ pip install tifffile pandas opencv-python matplotlib
 #pretrained model:
 https://huggingface.co/mouseland/cellpose-sam/blob/main/cpsam
 
+## Data Preparation
+
+### File Structure
+
+```
+project/
+├── original_images/          # Original microscopy images
+│   ├── sample_001.tif
+│   ├── sample_002.tif
+│   └── ...
+├── labeled_images/           # Images with red point annotations
+│   ├── sample_001_150count_Flatten.tif
+│   ├── sample_002_143count_Flatten.tif
+│   └── ...
+└── polystyrene_counter/      # This repository
+```
+
+### Labeling Guidelines
+
+1. Open original image in ImageJ/FIJI or similar software
+2. Mark each particle center with a red point 
+3. Save as TIF with naming convention: `{original_name}_{count}count_Flatten.tif`
+
+### Labeling Tips
+
+- Use consistent red color (R > 150, G < 100, B < 100)
+- Place points at particle centers
+- Include particle count in filename for validation
+
+## Data and Model
+Full dataset and pre-trained model available at:
+https://doi.org/10.5281/zenodo.XXXXXXX
+
 ## Usage
 
 ### Quick Start (End-to-End Pipeline)
@@ -117,34 +150,6 @@ python predict.py \
 ## Shell Scripts
 Shell scripts (`train.sh`, `evaluate.sh`, `allprocess.sh`) are provided for convenience.
 
-## Data Preparation
-
-### File Structure
-
-```
-project/
-├── original_images/          # Original microscopy images
-│   ├── sample_001.tif
-│   ├── sample_002.tif
-│   └── ...
-├── labeled_images/           # Images with red point annotations
-│   ├── sample_001_150count_Flatten.tif
-│   ├── sample_002_143count_Flatten.tif
-│   └── ...
-└── polystyrene_counter/      # This repository
-```
-
-### Labeling Guidelines
-
-1. Open original image in ImageJ/FIJI or similar software
-2. Mark each particle center with a red point 
-3. Save as TIF with naming convention: `{original_name}_{count}count_Flatten.tif`
-
-### Labeling Tips
-
-- Use consistent red color (R > 150, G < 100, B < 100)
-- Place points at particle centers
-- Include particle count in filename for validation
 
 ## Parameters
 
