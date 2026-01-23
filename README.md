@@ -198,7 +198,7 @@ Baseline Cellpose (without fine-tuning): MAE = 65.5
 ## Reproducibility
 Training results may vary slightly between runs due to
 stochastic elements in deep learning. For reproducible
-results, use the provided pre-trained model.
+results, use the provided pre-trained model (https://doi.org/10.5281/zenodo.XXXXXXX).
 
 ## Citation
 
