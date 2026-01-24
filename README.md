@@ -71,7 +71,7 @@ project/
 
 ## Data and Model
 Full dataset and pre-trained model available at:
-https://doi.org/10.5281/zenodo.XXXXXXX
+https://doi.org/10.5281/zenodo.18364078
 
 ## Usage
 
