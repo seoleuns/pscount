@@ -191,25 +191,25 @@ python opencv_counting.py --input ./test_original_csv --csv ./test_ground_truth.
 
 | Dataset     | Training Images | Test Images | MAE |
 |-------------|-----------------|-------------|-----|
-| Polystyrene | 19              | 24          | 2.2 |
+| Polystyrene | 19              | 24          | 2.1 |
 
 Baseline Cellpose (without fine-tuning): MAE = 65.5
 
 ## Reproducibility
 Training results may vary slightly between runs due to
 stochastic elements in deep learning. For reproducible
-results, use the provided pre-trained model (https://doi.org/10.5281/zenodo.XXXXXXX).
+results, use the provided pre-trained model (https://doi.org/10.5281/zenodo.18364078).
 
 ## Citation
 
 If you use this tool in your research, please cite:
 
 ```bibtex
-@article{shin2025polystyrene,
+@article{shin2026polystyrene,
   title={Polystyrene Particle Counter: A Deep Learning Pipeline for Automated Particle Counting},
-  author={...},
-  journal={SoftwareX},
-  year={2025}
+  author={Shin, Seoleun and Lee, Ji Youn},
+  journal={SoftwareX (submitted)},
+  year={2026}
 }
 ```
 
