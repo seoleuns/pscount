@@ -219,5 +219,5 @@ MIT License
 
 ## Acknowledgments
 
-- [Cellpose](https://github.com/MouseLand/cellpose) - Base segmentation model
-- [Cellpose 2.0 paper](https://www.nature.com/articles/s41592-022-01663-4) - Fine-tuning methodology
+- [Cellpose](https://github.com/MouseLand/cellpose) - Base segmentation framework
+- [Cellpose-SAM](https://www.biorxiv.org/content/10.1101/2025.04.28.651001) - Base foundation model (Pachitariu et al., 2025)
