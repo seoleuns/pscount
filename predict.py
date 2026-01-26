@@ -232,7 +232,7 @@ def evaluate_with_csv(model_path, image_dir, csv_path, output_dir, save_images=T
         img = tifffile.imread(str(img_path))
         if model_path == "default":
            masks, flows, _ = model.eval(img)
-           #masks, flows, _ = model.eval(img,diameter=16)
+           #masks, flows, _ = model.eval(img,diameter=16) # the parameter optimized for the default Cellpose
         else:
            masks, flows, _ = model.eval(img)
         pred_count = int(masks.max())
