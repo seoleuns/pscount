@@ -182,7 +182,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="OpenCV baseline counting")
     parser.add_argument("--input", required=True, help="Input image directory")
     parser.add_argument("--csv", default=None, help="CSV with ground truth")
-    parser.add_argument("--test-labeled", default=None, help="Labeled image directory")
+    parser.add_argument("--labeled", default=None, help="Labeled image directory")
     parser.add_argument("--output", default="./results_opencv", help="Output directory")
     args = parser.parse_args()
     
