@@ -119,21 +119,23 @@ python create_masks.py \
 Fine-tune Cellpose on your data:
 
 ```bash
-python train.py \
-    --train ./train_data \
-    --test ./test_data \
-    --name polystyrene_model \
-    --epochs 100
+python pipeline.py \
+    --labeled ./train_labeled \
+    --original ./train_original \
+    --output ./output \
+    --epochs 100 \
+    --radius 8 \
+    --name polystyrene_model
 ```
 
 Evaluate with ground truth:
 
 ```bash
-python predict.py \
-    --model ./models/polystyrene_model \
-    --input ./test_original \
-    --labeled ./test_labeled \
-    --output ./results_test
+python pipeline.py \
+    --model ./output/models/polystyrene_model \
+    --test-labeled ./test_labeled \
+    --test-original ./test_original \
+    --output ./results_pscount
 ```
 
 #### 4. Predict
@@ -142,7 +144,7 @@ Count particles in new images without ground truth or labeled images:
 
 ```bash
 python predict.py \
-    --model ./models/polystyrene_model \
+    --model ./output/models/polystyrene_model \
     --input ./new_images \
     --output ./results_unknown
 ```
