@@ -32,10 +32,10 @@ conda activate pscount
 # Install PyTorch with CUDA support
 conda install pytorch pytorch-cuda=12.1 -c pytorch -c nvidia
 
-# Install dependencies
-pip install cellpose
-pip install tifffile pandas opencv-python matplotlib
+# Install other dependencies
+pip install -r requirements.txt
 ```
+
 ## CellPose-SAM 4.0
 #pretrained model:
 https://huggingface.co/mouseland/cellpose-sam/blob/main/cpsam
