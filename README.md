@@ -161,6 +161,8 @@ Shell scripts (`train.sh`, `evaluate.sh`, `allprocess.sh`) are provided for conv
 | `--epochs` | 100    | Number of training epochs |
 | `--lr`     | 1e-5   | Learning rate             |
 
+Note: Weight decay is set to 0.1 (Cellpose-SAM default) and is not exposed as a command-line argument.
+
 ## Output
 
 ```
