@@ -199,7 +199,7 @@ python opencv_counting.py --input ./test_original_csv --csv ./test_ground_truth.
 
 Baseline Cellpose (without fine-tuning): MAE = 65.5
 
-All experiments were performed on a workstation equipped with an NVIDIA A6000 GPU (48GB VRAM). Training on 19 images took approximately 4.7 minutes, and inference time was 1.99 ± 0.29 seconds per image (1500 × 1500 pixels, n=24 in Test set A and B). 
+All experiments were performed on a server equipped with an NVIDIA A6000 GPU (48GB VRAM). Training on 19 images took approximately 4.7 minutes, and inference time was 1.97 ± 0.15 seconds per image (1500 × 1500 pixels, n=24 in Test set A and B). 
 
 ## Reproducibility
 Training results may vary slightly between runs due to
