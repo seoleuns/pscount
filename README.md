@@ -163,6 +163,19 @@ Shell scripts (`train.sh`, `evaluate.sh`, `allprocess.sh`) are provided for conv
 
 Note: Weight decay is set to 0.1 (Cellpose-SAM default) and is not exposed as a command-line argument.
 
+## Estimating Mask Radius for Your Imaging Setup
+
+To determine the appropriate mask radius for your microscopy images, 
+use the provided utility script:
+
+```bash
+python estimate_mask_radius.py --image your_image.tif --visualize
+```
+
+The script measures the apparent diameter of isolated single particles 
+and recommends an appropriate mask radius. Adjust `--min_area` and 
+`--max_area` based on your particle size if needed.
+
 ## Output
 
 ```
