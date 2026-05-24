@@ -219,18 +219,13 @@ Training results may vary slightly between runs due to
 stochastic elements in deep learning. For reproducible
 results, use the provided pre-trained model (https://doi.org/10.5281/zenodo.18364078).
 
-## Citation
-
-If you use this tool in your research, please cite:
-
-```bibtex
-@article{shin2026polystyrene,
-  title={Polystyrene Particle Counter: A Deep Learning Pipeline for Automated Particle Counting},
-  author={Shin, Seoleun and Lee, Ji Youn},
-  journal={SoftwareX (submitted)},
-  year={2026}
-}
 ```
+## Paper
+
+Published in SoftwareX: [https://doi.org/10.1016/j.softx.2026.102695]
+
+The author's manuscript version with high-resolution figures is 
+also available [here](manuscript.pdf).
 
 ## License
 
