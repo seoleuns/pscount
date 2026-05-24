@@ -222,8 +222,8 @@ results, use the provided pre-trained model (https://doi.org/10.5281/zenodo.1836
 ## Paper
 
 Published in SoftwareX: [https://doi.org/10.1016/j.softx.2026.102695]
-```
 
+```
 ## License
 
 MIT License
