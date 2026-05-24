@@ -219,11 +219,10 @@ Training results may vary slightly between runs due to
 stochastic elements in deep learning. For reproducible
 results, use the provided pre-trained model (https://doi.org/10.5281/zenodo.18364078).
 
-```
 ## Paper
 
 Published in SoftwareX: [https://doi.org/10.1016/j.softx.2026.102695]
-
+```
 
 ## License
 
