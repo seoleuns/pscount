@@ -224,8 +224,6 @@ results, use the provided pre-trained model (https://doi.org/10.5281/zenodo.1836
 
 Published in SoftwareX: [https://doi.org/10.1016/j.softx.2026.102695]
 
-The author's manuscript version with high-resolution figures is 
-also available [here](manuscript.pdf).
 
 ## License
 
